@@ -2,6 +2,7 @@ import { Category } from "../models/category";
 import { User } from "../models/user";
 import { categoryNameExists, categoryRepository } from "../repositories/categoryRepository";
 import { emailExists, userRepository } from "../repositories/userRepository";
+import bcrypt from 'bcryptjs';
 
 
 const initialization = {
