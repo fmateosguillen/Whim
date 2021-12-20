@@ -50,4 +50,9 @@ const userRepository = {
     }
 }
 
+const emailExists = async (email2) => {
+    let result = await User.findOne({ email: email2 });
+    return result;
+}
+
 export {userRepository, emailExists}

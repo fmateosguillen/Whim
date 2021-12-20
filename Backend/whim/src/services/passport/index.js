@@ -3,6 +3,7 @@ import {Strategy as LocalStrategy} from 'passport-local'
 import {Strategy as JwtStrategy, ExtractJwt} from 'passport-jwt';
 import { userRepository } from '../../repositories/userRepository';
 import bcrypt from 'bcryptjs';
+import 'dotenv/config';
 
 passport.use(new LocalStrategy({
     usernameField: "email",

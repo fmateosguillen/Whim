@@ -1,7 +1,4 @@
-import { kStringMaxLength } from 'buffer';
 import mongoose from 'mongoose';
-import internal from 'stream';
-import { serializeInteger } from 'whatwg-url';
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
@@ -18,4 +15,4 @@ const productSchema = new Schema({
 });
 
 const Product = mongoose.model('Product', productSchema);
-export {Product}
+export { Product }

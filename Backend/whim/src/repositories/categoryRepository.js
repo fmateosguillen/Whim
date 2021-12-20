@@ -53,4 +53,4 @@ const categoryNameExists = async (categoryName) => {
     return result
 }
 
-export { categoryRepository }
+export { categoryRepository, categoryNameExists };

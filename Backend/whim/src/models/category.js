@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const categoryScheme = new Scheme({
+const categorySchema = new Schema({
     name: String,
     fatherCategory: {
         type: mongoose.ObjectId,
@@ -9,5 +9,5 @@ const categoryScheme = new Scheme({
     }
 });
 
-const Category = mongoose.model('Category', categoryScheme);
+const Category = mongoose.model('Category', categorySchema);
 export { Category }

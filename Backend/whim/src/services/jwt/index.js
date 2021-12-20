@@ -8,7 +8,7 @@ const jwtAlgorithm = process.env.JWT_ALGORITHM;
 export const JwtService = {
     sign: (user) => jwt.sign({sub: user.id}, secret, {
                             algorithm: jwtAlgorithm,
-                            lifetime: jwtLifetime
+                            lifetime: jwtLifeTime
                         }),
     verify: (token) => jwt.verify(token, secret)
 }
