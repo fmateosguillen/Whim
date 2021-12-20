@@ -8,7 +8,7 @@ const orderSchema = new Schema({
     deliverDate: Date,
     total: Number,
     city: String,
-    adress: String,
+    address: String,
     ordered: Boolean,
     user: {
         type: mongoose.ObjectId,
